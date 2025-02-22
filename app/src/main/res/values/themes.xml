@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme._7MinutesWorkout" parent="Theme.MaterialComponents.DayNight.DarkActionBar"/>
+    
+    
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.MaterialComponents.ActionBar">
+        <item name="colorControlNormal">@color/control_toolbar_normal</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Other theme attributes -->
+        <item name="editTextStyle">@style/Widget.Material3.TextInputEditText.OutlinedBox.Dense</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/fl_layout"
+        android:src="@drawable/start_image"
+        android:layout_marginTop="36dp"
+        android:scaleType="fitXY" />
+
+    <FrameLayout
+        android:id="@+id/fl_layout"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myImageView"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/item_circular_border_rippled_element">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="START"
+            android:textColor="@color/grey"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_bmi"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/history"
+        app:layout_constraintTop_toBottomOf="@+id/fl_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/ic_bmi_background">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="BMI"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/calculator_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/fl_bmi"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/fl_bmi"
+        app:layout_constraintEnd_toEndOf="@id/fl_bmi"/>
+
+
+    <FrameLayout
+        android:id="@+id/history"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_bmi_background"
+        app:layout_constraintTop_toBottomOf="@+id/fl_layout"
+        app:layout_constraintLeft_toLeftOf="@+id/fl_bmi"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+           android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/file"/>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/history_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        app:layout_constraintTop_toBottomOf="@id/fl_bmi"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/history"
+        app:layout_constraintEnd_toEndOf="@id/history"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

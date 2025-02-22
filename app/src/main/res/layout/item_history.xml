@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:id="@+id/ll_history_item_main"
+    android:background="#EBEBEB"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvtext"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="1"
+        android:textStyle="bold"
+       />
+
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:paddingLeft="57dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="09-09-2024  15:23:45"
+        android:textStyle="bold"
+        android:textSize="16sp"
+     />
+
+
+
+</LinearLayout>
